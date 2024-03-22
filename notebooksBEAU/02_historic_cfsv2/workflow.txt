@@ -1,0 +1,13 @@
+1. Get met data
+
+2. Run snowmodel
+- adjust .par file
+- move output .gdat and .ctl to new location
+
+3. Remove ET
+
+4. Run HF
+
+5. Final output files
+- stitch together second year
+- metadata
