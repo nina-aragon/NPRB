@@ -1,10 +1,12 @@
-# Source Data
-The historic and future datasets were generated using a suite of physically based, spatially distributed weather (MicroMet), energy-balance snow/ice melt (SnowModel), and runoff routing (HydroFlow) models:
+# Overview
+This repository contains all notebooks and scripts used to model historic (1991-2020) and future (2017-2100) discharge across the 4 arctic HUC4 subregions of Alaska. 
+
+Historic and future datasets were generated using a suite of physically based, spatially distributed weather (MicroMet), energy-balance snow/ice melt (SnowModel), and runoff routing (HydroFlow) models:
 SnowModel - DOI: https://doi.org/10.1175/JHM548.1
 MicroMet - DOI: https://doi.org/10.1175/JHM486.1
 Hydroflow - DOI: https://doi.org/10.1175/JCLI-D-11-00591.1
 
-Source data:
+# Source data:
 Weather forcing data: NCEP CFSv2: https://developers.google.com/earth-engine/datasets/catalog/NOAA_CFSV2_FOR6H
 
 DEM data - GMTED 2010 elevation data: https://developers.google.com/earth-engine/datasets/catalog/USGS_GMTED2010_FULL
