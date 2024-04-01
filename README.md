@@ -7,6 +7,8 @@ Historic and future datasets were generated using a suite of physically based, s
 * MicroMet - DOI: https://doi.org/10.1175/JHM486.1
 * Hydroflow - DOI: https://doi.org/10.1175/JCLI-D-11-00591.1
 
+[![DOI](https://zenodo.org/badge/776077718.svg)](https://zenodo.org/doi/10.5281/zenodo.10904627)
+
 # Source data:
 Weather forcing data: NCEP CFSv2: https://developers.google.com/earth-engine/datasets/catalog/NOAA_CFSV2_FOR6H
 
