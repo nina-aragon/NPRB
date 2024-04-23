@@ -1,5 +1,5 @@
 # Overview
-This repository contains all notebooks and scripts used to model historic (1991-2020) and future (2017-2100) discharge across the 4 arctic HUC4 subregions of Alaska. 
+This repository contains all notebooks and scripts used to model historic (1991-2020) and future (2071-2100) discharge across the 4 arctic HUC4 subregions of Alaska. 
 
 Historic and future datasets were generated using a suite of physically based, spatially distributed weather (MicroMet), energy-balance snow/ice melt (SnowModel), and runoff routing (HydroFlow) models:
 
