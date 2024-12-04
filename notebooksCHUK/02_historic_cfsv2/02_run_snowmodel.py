@@ -151,18 +151,33 @@ for styr in start_years_list:
     precgin = SMpath+'outputs_hist/prec.gdat'
     ssubgin = SMpath+'outputs_hist/ssub.gdat'
     tairgin = SMpath+'outputs_hist/tair.gdat'
+    rpregin = SMpath+'outputs_hist/rpre.gdat'
+    spregin = SMpath+'outputs_hist/spre.gdat'
+    smltgin = SMpath+'outputs_hist/smlt.gdat'
+    glmtgin = SMpath+'outputs_hist/glmt.gdat'
+    
     # final name
     swedgo = SMpath+'outputs_hist/swed_'+str(st.year+1)+'-'+str(ed.year)+'.gdat'
     roffgo = SMpath+'outputs_hist/roff_'+str(st.year+1)+'-'+str(ed.year)+'.gdat'
     precgo = SMpath+'outputs_hist/prec_'+str(st.year+1)+'-'+str(ed.year)+'.gdat'
     ssubgo = SMpath+'outputs_hist/ssub_'+str(st.year+1)+'-'+str(ed.year)+'.gdat'
     tairgo = SMpath+'outputs_hist/tair_'+str(st.year+1)+'-'+str(ed.year)+'.gdat'
+    rprego = SMpath+'outputs_hist/rpre_'+str(st.year+1)+'-'+str(ed.year)+'.gdat'
+    sprego = SMpath+'outputs_hist/spre_'+str(st.year+1)+'-'+str(ed.year)+'.gdat'
+    smltgo = SMpath+'outputs_hist/smlt_'+str(st.year+1)+'-'+str(ed.year)+'.gdat'
+    glmtgo = SMpath+'outputs_hist/glmt_'+str(st.year+1)+'-'+str(ed.year)+'.gdat'
+    
     # move
     get_ipython().system(' cp $swedgin $swedgo')
     get_ipython().system(' cp $roffgin $roffgo')
     get_ipython().system(' cp $precgin $precgo')
     get_ipython().system(' cp $ssubgin $ssubgo')
     get_ipython().system(' cp $tairgin $tairgo')
+    get_ipython().system(' cp $rpregin $rprego')
+    get_ipython().system(' cp $spregin $sprego')
+    get_ipython().system(' cp $smltgin $smltgo')
+    get_ipython().system(' cp $glmtgin $glmtgo')
+    
 
     # move .ctl files
     # starting name
@@ -171,28 +186,40 @@ for styr in start_years_list:
     preccin = SMpath+'ctl_files/wo_assim/prec.ctl'
     ssubcin = SMpath+'ctl_files/wo_assim/ssub.ctl'
     taircin = SMpath+'ctl_files/wo_assim/tair.ctl'
+    rprecin = SMpath+'ctl_files/wo_assim/rpre.ctl'
+    sprecin = SMpath+'ctl_files/wo_assim/spre.ctl'
+    smltcin = SMpath+'ctl_files/wo_assim/smlt.ctl'
+    glmtcin = SMpath+'ctl_files/wo_assim/glmt.ctl'
+    
     # final name
     swedco = SMpath+'outputs_hist/swed_'+str(st.year+1)+'-'+str(ed.year)+'.ctl'
     roffco = SMpath+'outputs_hist/roff_'+str(st.year+1)+'-'+str(ed.year)+'.ctl'
     precco = SMpath+'outputs_hist/prec_'+str(st.year+1)+'-'+str(ed.year)+'.ctl'
     ssubco = SMpath+'outputs_hist/ssub_'+str(st.year+1)+'-'+str(ed.year)+'.ctl'
     tairco = SMpath+'outputs_hist/tair_'+str(st.year+1)+'-'+str(ed.year)+'.ctl'
+    rpreco = SMpath+'outputs_hist/rpre_'+str(st.year+1)+'-'+str(ed.year)+'.ctl'
+    spreco = SMpath+'outputs_hist/spre_'+str(st.year+1)+'-'+str(ed.year)+'.ctl'
+    smltco = SMpath+'outputs_hist/smlt_'+str(st.year+1)+'-'+str(ed.year)+'.ctl'
+    glmtco = SMpath+'outputs_hist/glmt_'+str(st.year+1)+'-'+str(ed.year)+'.ctl'
+    
     # edit .ctl
     replace_line(swedcin, 0, 'DSET ^swed_'+str(st.year+1)+'-'+str(ed.year)+'.gdat\n')
     replace_line(roffcin, 0, 'DSET ^roff_'+str(st.year+1)+'-'+str(ed.year)+'.gdat\n')
     replace_line(preccin, 0, 'DSET ^prec_'+str(st.year+1)+'-'+str(ed.year)+'.gdat\n')
     replace_line(ssubcin, 0, 'DSET ^ssub_'+str(st.year+1)+'-'+str(ed.year)+'.gdat\n')
     replace_line(taircin, 0, 'DSET ^tair_'+str(st.year+1)+'-'+str(ed.year)+'.gdat\n')
+    replace_line(rprecin, 0, 'DSET ^rpre_'+str(st.year+1)+'-'+str(ed.year)+'.gdat\n')
+    replace_line(sprecin, 0, 'DSET ^spre_'+str(st.year+1)+'-'+str(ed.year)+'.gdat\n')
+    replace_line(smltcin, 0, 'DSET ^smlt_'+str(st.year+1)+'-'+str(ed.year)+'.gdat\n')
+    replace_line(glmtcin, 0, 'DSET ^glmt_'+str(st.year+1)+'-'+str(ed.year)+'.gdat\n')
+    
     # move
     get_ipython().system(' cp $swedcin $swedco')
     get_ipython().system(' cp $roffcin $roffco')
     get_ipython().system(' cp $preccin $precco')
     get_ipython().system(' cp $ssubcin $ssubco')
     get_ipython().system(' cp $taircin $tairco')
-
-
-# In[ ]:
-
-
-
-
+    get_ipython().system(' cp $rprecin $rpreco')
+    get_ipython().system(' cp $sprecin $spreco')
+    get_ipython().system(' cp $smltcin $smltco')
+    get_ipython().system(' cp $glmtcin $glmtco')
